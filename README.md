@@ -114,10 +114,9 @@ result = mac(input_data, filter_data)
 
 print("MAC 연산 결과:", result)
 ```
-```bash
-python3 main.py
 ```
-```text
+bash
+python3 main.py
 MAC 연산 결과: 25
 ```
 - 테스트 결과, 예상한 연산 결과와 프로그램 출력값이 일치하였다.
