@@ -88,7 +88,7 @@ mini-npu/
 - 입력 패턴과 필터의 동일한 위치에 있는 값을 각각 곱하고, 결과를 누적 합산 변수(result)에 더하는 방식으로 MAC 연산을 수행한다.
 - 모든 위치의 연산이 완료되면 최종 누적 합산 결과를 반환하도록 구현하였다.
 - 주요 코드
-```
+```Python
 def mac(input_data, filter_data):
     result = 0
     for i in range(len(input_data)):
@@ -97,7 +97,7 @@ def mac(input_data, filter_data):
     return result
 ```
 ### 4-3. MAC 연산 결과 확인
-```
+```Python
 input_data = [
     [1, 2, 3],
     [4, 5, 6],
@@ -114,7 +114,7 @@ result = mac(input_data, filter_data)
 
 print("MAC 연산 결과:", result)
 ```
-```
+```bash
 python3 main.py
 MAC 연산 결과: 25
 ```
